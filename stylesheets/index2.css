@@ -1,0 +1,117 @@
+
+body {
+    position: relative;
+    background-color: #000000;
+}
+#section1 {
+    background-image: url("../images/cityLights.jpg");
+    padding-top:50px;
+    min-height:700px;
+}
+
+#section2 {
+    padding:50px;
+    min-height:700px;
+    color: #ffffff;
+
+}
+#section3 {
+    padding-top:50px;min-height:700px;color: #fff;
+}
+#section41 {
+    padding-top:50px;min-height:700px;color: #fff;
+}
+#section42 {
+    padding-top:50px;min-height:700px;color: #fff;
+}
+#section43 {
+    padding-top:50px;min-height:700px;color: #fff;
+}
+
+#section5 {
+    padding-top:50px;min-height:700px;color: #fff;
+}
+
+#section6 {
+    padding-top:50px;min-height:150px;background-color: #505050;
+}
+#name {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20%;
+    font-size: 60px;
+}
+#major {
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+#aboutMe{
+
+    font-size: 80px;
+    text-align: center;
+    color: #ffffff;
+    background: #a7a5a6;
+
+}
+
+#aboutMeText{
+
+    padding: 0 20px;
+    margin-top: 10px;
+    font-size: 25px;
+    min-width:88px;
+    min-height: 490px;
+
+}
+#aboutContainer{
+    background-color:#a7a5a6;
+    margin-bottom: 10px;
+}
+
+.imageProfile{
+    border-radius: 50%;
+    margin-top: 50px;
+}
+p {
+    text-indent: 20px;
+    margin-left: 10px;
+}
+
+.education{
+    margin-top: 10%;
+    vertical-align: middle;
+}
+
+h4 {
+    line-height: 150%;
+}
+
+a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.link-buttons{
+    margin-left: 30%;
+
+}
+.btn{
+    width: 120px;
+    text-decoration: none;
+}
+.projectImages{
+    padding-top: 50px;
+}
+
+.thumbnail{
+    background-color: #000000;
+}
+
+.programmingLanguage{
+    color: #f5f6f7;
+    font-size: medium;
+    font-weight: 700;
+}
