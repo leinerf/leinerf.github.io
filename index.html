@@ -1,252 +1,319 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Freniel Zabala</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Freniel Zabala</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="stylesheets/index2.css">
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+  <style>
+    body {
+        position: relative;
+    }
+    ul.nav-pills {
+        top: 20px;
+        position: fixed;
+    }
+    div.col-8 div {
+        
+        padding-top: 20%;
+        padding-bottom: 20%;
+        margin-left: 10px; 
+    }
+    #section5 {
+      padding-bottom: 1200px;
+    }
+    .nav-link{
+      width:20%;
+      min-width: 100px;
+    }
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+      color: #fff;
+      background-color: #234b75;
+    }
+    a {
+      color: #747575;
+      text-decoration: none;
+      background-color: transparent;
+      -webkit-text-decoration-skip: objects;
+
+    }
+
+    #name{
+      font-size: 3.8em;
+    }
+    .flex-column {
+      padding-top: 5%;
+    }
+    .glyph-sample:hover { /*color:blue;*/ }
+    
+    .fa {
+      font-size: 1.8em; 
+    }
+    .fa:hover {
+      /*color: white;*/
+    }
+    .btn-primary{
+      background-color: #fff;
+      border-color:  gray;
+      color: gray;
+    }
+    
+    nav{
+     background: #c6c7c4; 
+    }
+    #myScrollspy{
+      padding-left: 5%;
+    }
+    @media (max-width: 991px) and (max-height: 900px){
+      #berkeley-bear{
+        width: 100px;
+        height: 110px;
+      }
+    }
+    @media (max-width: 350px) and (max-height: 600px){
+      #berkeley-bear{
+          width: 80px;
+          height: 90px;
+      }
+      #myScrollspy{
+        padding-left: 0;
+        padding-right: 5%;
+      }
+    }
+
+
+  </style>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Personal Website</a>
-        </div>
-        <div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-sm-3 col-4" id="myScrollspy" >
+      
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a href="#section1">
+            
+          </a><img src="images/profile_pic.jpg" class="img-fluid " alt="Responsive image" width="20%" style="min-height: 120px; min-width: 100px; border-radius: 100%;">
+        </li>
+        <br>
+        <li class="nav-item">
+          <a class="nav-link active" href="#section1">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">Education</a>
+        </li>
+        <li class="nav-item"> 
+          <a class="nav-link" href="#section3">Skills</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#section4">Projects</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#section5">Contact Me</a>
+        </li>
 
-                    <li><a href="#section1">Freniel Zabala</a></li>
-                    <li><a href="#section2">About Me</a></li>
-                    <li><a href="#section3">Education</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#section41">CalHacks 4.0</a></li>
-                            <li><a href="#section42">YelpCamp</a></li>
-                            <li><a href="#section43">Gloabl Game Jam</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#section5">Programming Languages</a></li>
-                    <li><a href="#section6">Contact Info</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</nav>
-
-<div id="section1" class="container-fluid">
-    <h1 id="name">Freniel Zabala</h1>
-    <p id="major">&lt Software Developer &gt</p>
-</div>
-
-<div id="section2" class="container-fluid">
-
-    <div class="row">
-        <div class="col-lg-8 " id="aboutMeText">
-            <h1 style="text-align: center">About Me</h1>
-            <hr>
-            <!--1. What are you currently doing (in regards to your career) and how did you get there? How does your background make you unique?-->
-            <!--2. In terms of the work you do, what aspects are you most passionate about? Why?-->
-            <!--3. What do you consider some of your biggest professional and personal accomplishments? How did your attributes contribute to those accomplishments? Be as specific as you can.-->
-            <!--4. What are you looking for right now? If you’re job seeking, considering a career change or looking to take on freelance projects, mention it in your statement. (Include your email address as the last sentence.)​-->
-            <p>
-                Currently I am an undergraduate of University of California, Irvine.
-                Majoring in Computer Science and pursuing a career as a software developer.
-                I love programming and the countless hours I have spent on debugging and staring at coding problems in school, as crazy as it sounds, increased desire to learn more about computer science.
-            </p>
-            <p>
-                My favorite part of computer science is solving problems. I like solving programming problems because they remind me of puzzles. The harder the puzzle the more satisfaction I feel when I solve it.
-            </p>
-            <p>
-                I am looking for an internship that will allow me to solve real world problems with my programming skills that will create a lasting impact on the lives of others.
-
-            </p>
-            <!--<p style="text-align: center">-->
-                <!--Reach me at <a href="mailto:fzabala@uci.edu?subject=Internship/Work">fzabala@uci.edu</a> to connect.-->
-            <!--</p>-->
-            <div>
-                &nbsp;&nbsp;&nbsp;&nbsp;Reach Me At:
-                <a href="mailto:fzabala@uci.edu?subject=Internship/Work" class="btn btn-info btn-lg" role="button" style="width: 180px">fzabala@uci.edu</a>
-                <a href="https://github.com/leinerf/" class="btn btn-success btn-lg" role="button">GitHub</a>
-                <a href="https://www.linkedin.com/in/freniel-chester-zabala-117a8013a/" class="btn btn-success btn-lg" role="button">LinkedIn</a>
-                <a href="https://www.facebook.com/search/top/?q=freniel%20zabala" class="btn btn-primary btn-lg" role="button">Facebook</a>
-
-            </div>
-        </div>
-        <div class="col-lg-4">
-
-            <img src="images/profile_pic.jpg" alt="" class="imageProfile img-responsive img-rounded">
-
-        </div>
-
-
-    </div>
-
-</div>
-<div id="section3" class="container-fluid">
-
-    <div class="row">
-        <div class="col-lg-4">
-            <img src="images/uc-irvine-logo.gif" alt="" class=" img-responsive img-rounded">
-        </div>
-        <div class="col-lg-8">
-            <div class="education">
-                <h1>Education</h1>
-                <hr>
-                <h3>I go to University of California, Irvine </h3>
-                <h3>Part of Donald Bren School of Information and Computer Sciences</h3>
-                <h3>2nd Year, Majoring in Computer Science</h3>
-
-            </div>
-        </div>
-    </div>
-</div>
-<div id="section41" class="container-fluid">
-    <div class="row">
-        <div class="col-lg-8">
-            <div class="education">
-                <h1>CalHacks4.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;October 6 - 8, 2017</h1>
-                <h2>Participant/hacker</h2>
-                <hr>
-                <p style="font-size: 25px">
-                    Created a scrollable meme page gallery using hand gestures with leap motion sensor, NodeJs, ExpressJs, and mongoDB in the span of 36 hours. Created the database with mongoDB, used NodeJs and ExpressJs for routing and webserver, and deployed it through Heroku. Gained more experience with collaborating with another programmer and using an unfamiliar technology.
-                </p>
-                <div class="link-buttons">
-                    <a href="https://github.com/leinerf/meme_wars" class="btn btn-success btn-lg" role="button">GitHub</a>
-                    <a href="https://devpost.com/software/meme-wars" class="btn btn-info btn-lg" role="button">Devpost</a>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="col-lg-4">
-            <img src="images/calHacks.png" alt="" class=" projectImages img-responsive img-rounded">
-        </div>
-
-    </div>
-</div>
-<div id="section42" class="container-fluid">
-    <div class="row">
-        <div class="col-lg-8">
-            <div class="education">
-                <h1>Yelp Camp</h1>
-                <h2>Founder, Full-Stack Developer</h2>
-                <hr>
-                <p style="font-size: 25px">
-                    Created website for posting campgrounds with the MEAN stack to improve my skills in creating dynamic websites. Include important website functionality like password hashing, sessions, and authorization using Passport.js. Created the front-end with Bootstrap, HTML, and CSS. Implemented the webserver and routing with NodeJs and ExpressJs and connected it to mLab for the database.
-                </p>
-                <div class="link-buttons">
-                    <a href="https://github.com/leinerf/yelpCamp" class="btn btn-success btn-lg" role="button">GitHub</a>
-                    <a href="https://salty-basin-17130.herokuapp.com/" class="btn btn-info btn-lg" role="button">Website</a>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="col-lg-4">
-            <img src="images/yelpCamp.png" alt="" class=" projectImages img-responsive img-rounded" style="margin-top: 30px">
-        </div>
-
-    </div>
-</div>
-<div id="section43" class="container-fluid">
-    <div class="row">
-        <div class="col-lg-8">
-            <div class="education">
-                <h2>Global Game Jam, UCI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;January 20 – 22, 2017</h2>
-                <h2>UI Programmer, Scene Manager</h2>
-                <hr>
-                <p style="font-size: 25px">
-                    Collaborated with four other random people to create a video game based on sound within 24 hours. Learned how to use Unity for the first time to create the user interface like the start menu, level selection, and pause menu and implemented the transitions between the game levels.
-                </p>
-                <div class="link-buttons">
-                    <a href="https://github.com/j-eriksmith/RockPondMan" class="btn btn-success btn-lg" role="button">GitHub</a>
-                    <a href="https://globalgamejam.org/2017/games/rockpondman" class="btn btn-info btn-lg" role="button">GameJam</a>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="col-lg-4">
-            <img src="images/duck.png" alt="" class=" projectImages img-responsive img-rounded" style="margin-top: 30px">
-        </div>
-
-    </div>
-</div>
-<div id="section5" class="container-fluid">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1>Programming Languages I Use</h1>
-        </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="thumbnail">
-                <img src="images/python.png" alt="Fjords" style="width:100%">
-                <div class="caption">
-                    <p class="programmingLanguage">Used Python3 for APIs, data manipulation, file manipulation, and simple games and GUI.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="thumbnail">
-                <img src="images/NodeAndExpress.png" alt="Fjords" style="width:100%">
-                <div class="caption">
-                    <p class="programmingLanguage">Used NodeJs with ExpressJs to create webservers and routing for web application.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="thumbnail">
-                <img src="images/mongoDB.jpeg" alt="Fjords" style="width:100%">
-                <div class="caption">
-                    <p class="programmingLanguage">Used MongoDB with Mongoose to create, read, update, and destroy data from the database.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="thumbnail">
-                <img src="images/htmlJavascriptCss.png" alt="Fjords" style="width:100%">
-                <div class="caption">
-                    <p class="programmingLanguage">Used HTML, CSS, JavaScript, Bootstrap, and JQuery for front-end/User Interface.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="thumbnail" >
-                <img src="images/cplusplus.png" alt="Fjords" style="width:100%; height: 225px;">
-                <div class="caption">
-                    <p class="programmingLanguage">Currently learning C++ for creating fast and efficient programs and to learn about memory management.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="section6" class="container-fluid">
-    <div>
-        <p style="color: #ffffff; font-size: 40px">Contact Information:
-            <a href="mailto:fzabala@uci.edu?subject=Internship/Work" class="btn btn-info btn-lg" role="button" style="width: 200px; padding-left: 0px"; >fzabala@uci.edu</a>
-            <a href="https://github.com/leinerf/" class="btn btn-success btn-lg" role="button" style="padding-left: 0;">GitHub</a>
-            <a href="https://www.linkedin.com/in/freniel-chester-zabala-117a8013a/" class="btn btn-success btn-lg" role="button" style="padding-left: 0;">LinkedIn</a>
-            <a href="https://www.facebook.com/search/top/?q=freniel%20zabala" class="btn btn-primary btn-lg" role="button" style="padding-left: 0;">Facebook</a>
-
+      </ul>
+    </nav>
+    <div class="col-sm-9 col-8">
+      <div id="section1" class="">    
+        <h1 id="name">Freniel Zabala</h1>
+        <hr>
+        <br>
+        <div class="container" style="padding: 0;">
+          <p>
+          I’m a computer scientist who loves to code and hack random projects together. 
+          Currently, I am trying to pursue a career in machine learning and web development.
+          With machine learning and Artificial Intelligence, I plan to make people's lives 
+          easier by automating the tedious day-to-day tasks and make it easier for people 
+          to focus on what matters to them. When I’m not coding, you can find me playing league 
+          of legends or playing my guitar. 
         </p>
-
-    </div>
+        </div>
+        
+      </div>
+      <div id="section2" class=""> 
+        <h1>Education</h1>
+        <hr>
+        <br>
+        <h2><a href="" style="color: black; text-decoration: none;">University of California Irvine</a></h2> 
+        <h4>Bachelor of Science</h4>
+        <br>
+        <p>
+          Computer Science - Specialization in Machine Learning
+          <br> 
+          GPA: 3.5
+        </p>
+      </div>        
+      <div id="section3" class="">         
+        <h1>Skills</h1>
+        <hr>
+        <br>
+        <h4>Programming languages I know</h4>
+        <br>
+          <button type="button" class="btn btn-primary">
+            <span class="glyph-sample"><i class="icon-python"></i>Python</span>
+          </button>
+          <button type="button" class="btn btn-primary">
+            <span class="glyph-sample"><i class="icon-nodejs"></i> Nodejs</span>
+          </button>
+          <button type="button" class="btn btn-primary">
+            <span class="glyph-sample"><i class="icon-cplusplus"></i> Cplusplus</span> 
+          </button>
+          <button type="button" class="btn btn-primary">
+            <span class="glyph-sample"><i class="icon-mongodb"></i> Mongodb</span>
+          </button>
+          <button type="button" class="btn btn-primary">
+            <span class="glyph-sample"><i class="icon-html5-alt"></i> HTML5 </span>
+          </button>
+          <button type="button" class="btn btn-primary">
+            <span class="glyph-sample"><i class="icon-css3-alt"></i> CSS</span>
+          </button>
+      </div>
+      <div id="section4" class="">         
+        <div class="container-fluid" style="padding: 0;">
+          <h1>Projects</h1>
+          <hr>
+          <br>
+          <div class="row" style="padding: 0 0 0 10px;">
+            <div class="col-8" style="padding: 0 10px 0 0;">
+              <h1 style="white-space:nowrap;">CalHacks <img src="./images/calHacks.png" alt="berkeley bear" class="img-fluid "  id="berkeley-bear" style="width:10%; height: 10%; min-height: 40px;min-width: 39px;"></h1>
+              <h3>Participant/Hacker</h3>
+              <p>
+                Created a scrollable meme page gallery using hand gestures with leap motion sensor, NodeJs, ExpressJs, and mongoDB in the span of 36 hours. Created the database with mongoDB, used NodeJs and ExpressJs for routing and webserver, and deployed it through Heroku. Gained more experience with collaborating with another programmer and using an unfamiliar technology.
+              </p>
+              <a href="https://github.com/leinerf/meme_wars">
+                <button type="button" class="btn btn-primary">
+                  <i class="fa fa-github" aria-hidden="true"></i> Github
+                </button>
+              </a>        
+              <a href="https://devpost.com/software/meme-wars">
+                <button type="button" class="btn btn-primary">
+                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Devpost
+                </button>
+              </a>
+            </div>
+            
+          </div>
+          <br>
+          <br>
+          <div class="row" style="padding: 0 0 0 10px;">
+            <div class="col-8" style="padding: 0 10px 0 0;">
+              <h1 style="white-space:nowrap;">YelpCamp <img src="./images/yelpCamp.png" alt="berkeley bear" class="img-fluid "  id="berkeley-bear" style="width:10%; height: 10%; min-height: 40px;min-width: 39px; border-radius: 100%;"></h1>
+              <h3>Founder, Full-Stack Developer</h3>
+              <p>
+                Created a dynamic website for posting campgrounds with the MEAN stack to improve my skills in creating dynamic websites. Include important website functionality like password hashing, sessions, and authorization using Passport.js. Created the front-end with Bootstrap, HTML, and CSS. Implemented the webserver and routing with NodeJs and ExpressJs and connected it to mLab for the database.
+              </p>
+              
+              <a href="https://github.com/leinerf/yelpCamp">
+                <button type="button" class="btn btn-primary">
+                  <i class="fa fa-github" aria-hidden="true"></i> Github
+                </button>  
+              </a>
+              <a href="https://salty-basin-17130.herokuapp.com/">      
+                <button type="button" class="btn btn-primary">
+                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Website
+                </button>
+              </a>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row" style="padding: 0 0 0 10px;">
+            <div class="col-8" style="padding: 0 10px 0 0;">
+              <h1 style="white-space:nowrap;">Game Jam <img src="./images/duck.png" alt="berkeley bear" class="img-fluid "  id="berkeley-bear" style="width:10%; height: 10%; min-height: 40px;min-width: 39px; border-radius: 100%; background-color: #234b75"></h1>
+              <h3>UI Programmer, Scene Manager</h3>
+              <p>
+                Collaborated with four other random people to create a video game based on sound within 24 hours. Learned how to use Unity for the first time to create the user interface like the start menu, level selection, and pause menu and implemented the transitions between the game levels.
+              </p>
+              <a href="https://github.com/j-eriksmith/RockPondMan">
+                <button type="button" class="btn btn-primary">
+                    <i class="fa fa-github" aria-hidden="true"></i> Github
+                </button>        
+              </a>
+              <a href="https://globalgamejam.org/2017/games/rockpondman">
+                <button type="button" class="btn btn-primary">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> GameJam
+                </button>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div> 
+       <div id="section5" class="">         
+        <h1>Contact Me</h1>
+        <hr>
+        <br>
+        
+            <a href="https://github.com/leinerf/">
+              <button type="button" class="btn btn-primary">
+                <i class="fa fa-github" aria-hidden="true"></i> Github
+              </button>
+            </a>
+             <a href="mailto:fzabala@uci.edu?subject=Internship/Work">
+              <button type="button" class="btn btn-primary">
+               <i class="fa fa-envelope" aria-hidden="true"></i> fzabala@uci.edu
+              </button>
+            </a>
+            <a href="https://github.com/leinerf/">
+              <button type="button" class="btn btn-primary">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i> linkedin  
+              </button>
+            </a>
+            <a href="./others/internship2.0.docx" download>
+              <button type="button" class="btn btn-primary">
+               <i class="fa fa-file" aria-hidden="true"></i> Resume
+              </button>
+            </a>   
+        </div>        
+      </div>     
+  </div>
 </div>
+
+<script>
+function myFunction() {
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    return [w,h];
+    
+}
+
+window.onresize = function(event) {
+   console.log(myFunction());
+};
+</script>
 </body>
 </html>

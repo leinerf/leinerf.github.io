@@ -14,3 +14,9 @@ But ONE you have to proofread your shit.
 And it helps to read it outloud to proofread btw
 Two, the images/font are pretty.. big? In my opinion. Like for photos it looks really stretched and not centered.
 Your responsive design is bad
+
+//change design
+//make responsive
+//pick better pictures to encapuslate what I did
+//take certain things out
+//redo color scheme
