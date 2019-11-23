@@ -1,319 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <title>Freniel Zabala</title>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-  <script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        // Store hash
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-     
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-  });
-  </script>
-  <style>
-    body {
-        position: relative;
-    }
-    ul.nav-pills {
-        top: 20px;
-        position: fixed;
-    }
-    div.col-8 div {
-        
-        padding-top: 20%;
-        padding-bottom: 20%;
-        margin-left: 10px; 
-    }
-    #section5 {
-      padding-bottom: 1200px;
-    }
-    .nav-link{
-      width:20%;
-      min-width: 100px;
-    }
-    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-      color: #fff;
-      background-color: #234b75;
-    }
-    a {
-      color: #747575;
-      text-decoration: none;
-      background-color: transparent;
-      -webkit-text-decoration-skip: objects;
-
-    }
-
-    #name{
-      font-size: 3.8em;
-    }
-    .flex-column {
-      padding-top: 5%;
-    }
-    .glyph-sample:hover { /*color:blue;*/ }
-    
-    .fa {
-      font-size: 1.8em; 
-    }
-    .fa:hover {
-      /*color: white;*/
-    }
-    .btn-primary{
-      background-color: #fff;
-      border-color:  gray;
-      color: gray;
-    }
-    
-    nav{
-     background: #c6c7c4; 
-    }
-    #myScrollspy{
-      padding-left: 5%;
-    }
-    @media (max-width: 991px) and (max-height: 900px){
-      #berkeley-bear{
-        width: 100px;
-        height: 110px;
-      }
-    }
-    @media (max-width: 350px) and (max-height: 600px){
-      #berkeley-bear{
-          width: 80px;
-          height: 90px;
-      }
-      #myScrollspy{
-        padding-left: 0;
-        padding-right: 5%;
-      }
-    }
-
-
-  </style>
+  <title>RE:START</title>
 </head>
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
 
-<div class="container-fluid">
-  <div class="row">
-    <nav class="col-sm-3 col-4" id="myScrollspy" >
-      
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a href="#section1">
-            
-          </a><img src="images/profile_pic.jpg" class="img-fluid " alt="Responsive image" width="20%" style="min-height: 120px; min-width: 100px; border-radius: 100%;">
-        </li>
-        <br>
-        <li class="nav-item">
-          <a class="nav-link active" href="#section1">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section2">Education</a>
-        </li>
-        <li class="nav-item"> 
-          <a class="nav-link" href="#section3">Skills</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#section4">Projects</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#section5">Contact Me</a>
-        </li>
-
-      </ul>
+<body>
+  <section class="content" id="landing-page">
+    <div>
+      <div>
+        <img src="" alt="">
+      </div>
+      <div>
+        <img src="" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="content" id="trailer-page">
+    <div>
+      <div>Game Play Trailer</div>
+      <div>Featuring Roguelike Gameplay</div>
+    </div>
+    <div>
+      <video width="400" controls>
+        <source src="/assets/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+  </section>
+  <section class="content" id="story-page">
+    <div>
+      <div>
+        <img src="" alt="">
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis odio facilis ipsam magni autem ducimus, rem quam
+        quisquam provident consectetur. Nesciunt, optio! Voluptate amet, magnam nulla voluptatum reprehenderit odit
+        nemo!
+      </div>
+    </div>
+  </section>
+  <section class="content" id="characters-page">
+    <nav>
+      <div>
+        Characters
+      </div>
+      <div>
+        <ul>
+          <li>
+            Leif Ellps
+          </li>
+          <li>
+            Jade Ellps
+          </li>
+        </ul>
+      </div>
     </nav>
-    <div class="col-sm-9 col-8">
-      <div id="section1" class="">    
-        <h1 id="name">Freniel Zabala</h1>
-        <hr>
-        <br>
-        <div class="container" style="padding: 0;">
-          <p>
-          I’m a computer scientist who loves to code and hack random projects together. 
-          Currently, I am trying to pursue a career in machine learning and web development.
-          With machine learning and Artificial Intelligence, I plan to make people's lives 
-          easier by automating the tedious day-to-day tasks and make it easier for people 
-          to focus on what matters to them. When I’m not coding, you can find me playing league 
-          of legends or playing my guitar. 
-        </p>
-        </div>
-        
+  </section>
+  <section class="content" id="art-gallery-page">
+    <div>Art Gallery</div>
+    <div>
+      <div><img src="" alt=""></div>
+      <div>
+          <div><img src="" alt=""></div>
+          <div><img src="" alt=""></div>
+          <div><img src="" alt=""></div>
       </div>
-      <div id="section2" class=""> 
-        <h1>Education</h1>
-        <hr>
-        <br>
-        <h2><a href="" style="color: black; text-decoration: none;">University of California Irvine</a></h2> 
-        <h4>Bachelor of Science</h4>
-        <br>
-        <p>
-          Computer Science - Specialization in Machine Learning
-          <br> 
-          GPA: 3.5
-        </p>
-      </div>        
-      <div id="section3" class="">         
-        <h1>Skills</h1>
-        <hr>
-        <br>
-        <h4>Programming languages I know</h4>
-        <br>
-          <button type="button" class="btn btn-primary">
-            <span class="glyph-sample"><i class="icon-python"></i>Python</span>
-          </button>
-          <button type="button" class="btn btn-primary">
-            <span class="glyph-sample"><i class="icon-nodejs"></i> Nodejs</span>
-          </button>
-          <button type="button" class="btn btn-primary">
-            <span class="glyph-sample"><i class="icon-cplusplus"></i> Cplusplus</span> 
-          </button>
-          <button type="button" class="btn btn-primary">
-            <span class="glyph-sample"><i class="icon-mongodb"></i> Mongodb</span>
-          </button>
-          <button type="button" class="btn btn-primary">
-            <span class="glyph-sample"><i class="icon-html5-alt"></i> HTML5 </span>
-          </button>
-          <button type="button" class="btn btn-primary">
-            <span class="glyph-sample"><i class="icon-css3-alt"></i> CSS</span>
-          </button>
-      </div>
-      <div id="section4" class="">         
-        <div class="container-fluid" style="padding: 0;">
-          <h1>Projects</h1>
-          <hr>
-          <br>
-          <div class="row" style="padding: 0 0 0 10px;">
-            <div class="col-8" style="padding: 0 10px 0 0;">
-              <h1 style="white-space:nowrap;">CalHacks <img src="./images/calHacks.png" alt="berkeley bear" class="img-fluid "  id="berkeley-bear" style="width:10%; height: 10%; min-height: 40px;min-width: 39px;"></h1>
-              <h3>Participant/Hacker</h3>
-              <p>
-                Created a scrollable meme page gallery using hand gestures with leap motion sensor, NodeJs, ExpressJs, and mongoDB in the span of 36 hours. Created the database with mongoDB, used NodeJs and ExpressJs for routing and webserver, and deployed it through Heroku. Gained more experience with collaborating with another programmer and using an unfamiliar technology.
-              </p>
-              <a href="https://github.com/leinerf/meme_wars">
-                <button type="button" class="btn btn-primary">
-                  <i class="fa fa-github" aria-hidden="true"></i> Github
-                </button>
-              </a>        
-              <a href="https://devpost.com/software/meme-wars">
-                <button type="button" class="btn btn-primary">
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Devpost
-                </button>
-              </a>
-            </div>
-            
-          </div>
-          <br>
-          <br>
-          <div class="row" style="padding: 0 0 0 10px;">
-            <div class="col-8" style="padding: 0 10px 0 0;">
-              <h1 style="white-space:nowrap;">YelpCamp <img src="./images/yelpCamp.png" alt="berkeley bear" class="img-fluid "  id="berkeley-bear" style="width:10%; height: 10%; min-height: 40px;min-width: 39px; border-radius: 100%;"></h1>
-              <h3>Founder, Full-Stack Developer</h3>
-              <p>
-                Created a dynamic website for posting campgrounds with the MEAN stack to improve my skills in creating dynamic websites. Include important website functionality like password hashing, sessions, and authorization using Passport.js. Created the front-end with Bootstrap, HTML, and CSS. Implemented the webserver and routing with NodeJs and ExpressJs and connected it to mLab for the database.
-              </p>
-              
-              <a href="https://github.com/leinerf/yelpCamp">
-                <button type="button" class="btn btn-primary">
-                  <i class="fa fa-github" aria-hidden="true"></i> Github
-                </button>  
-              </a>
-              <a href="https://salty-basin-17130.herokuapp.com/">      
-                <button type="button" class="btn btn-primary">
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Website
-                </button>
-              </a>
-            </div>
-          </div>
-          <br>
-          <br>
-          <div class="row" style="padding: 0 0 0 10px;">
-            <div class="col-8" style="padding: 0 10px 0 0;">
-              <h1 style="white-space:nowrap;">Game Jam <img src="./images/duck.png" alt="berkeley bear" class="img-fluid "  id="berkeley-bear" style="width:10%; height: 10%; min-height: 40px;min-width: 39px; border-radius: 100%; background-color: #234b75"></h1>
-              <h3>UI Programmer, Scene Manager</h3>
-              <p>
-                Collaborated with four other random people to create a video game based on sound within 24 hours. Learned how to use Unity for the first time to create the user interface like the start menu, level selection, and pause menu and implemented the transitions between the game levels.
-              </p>
-              <a href="https://github.com/j-eriksmith/RockPondMan">
-                <button type="button" class="btn btn-primary">
-                    <i class="fa fa-github" aria-hidden="true"></i> Github
-                </button>        
-              </a>
-              <a href="https://globalgamejam.org/2017/games/rockpondman">
-                <button type="button" class="btn btn-primary">
-                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> GameJam
-                </button>
-              </a>
-            </div>
-            
-          </div>
-        </div>
-      </div> 
-       <div id="section5" class="">         
-        <h1>Contact Me</h1>
-        <hr>
-        <br>
-        
-            <a href="https://github.com/leinerf/">
-              <button type="button" class="btn btn-primary">
-                <i class="fa fa-github" aria-hidden="true"></i> Github
-              </button>
-            </a>
-             <a href="mailto:fzabala@uci.edu?subject=Internship/Work">
-              <button type="button" class="btn btn-primary">
-               <i class="fa fa-envelope" aria-hidden="true"></i> fzabala@uci.edu
-              </button>
-            </a>
-            <a href="https://www.linkedin.com/in/freniel-zabala/">
-              <button type="button" class="btn btn-primary">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i> linkedin  
-              </button>
-            </a>
-            <a href="./others/internship2.0.docx" download>
-              <button type="button" class="btn btn-primary">
-               <i class="fa fa-file" aria-hidden="true"></i> Resume
-              </button>
-            </a>   
-        </div>        
-      </div>     
-  </div>
-</div>
-
-<script>
-function myFunction() {
-    var w = window.innerWidth;
-    var h = window.innerHeight;
-    return [w,h];
-    
-}
-
-window.onresize = function(event) {
-   console.log(myFunction());
-};
-</script>
+    </div>
+  </section>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
