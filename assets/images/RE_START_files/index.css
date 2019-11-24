@@ -8,33 +8,11 @@ html, body {
 
 .content {
     padding: 5%;
-    
-}
-
-.center-vertically {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.center-horizontally {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.navbar-content > nav {
-    display: flex;
-    justify-content: start;
-}
-
-#character-image {
-    max-width: 350px;
-}
-
-.character-content {
-    display: flex;
-}
 .logo-content {
     background: #DCE0DC;
     padding: 5%;
@@ -60,25 +38,7 @@ html, body {
 
 img {
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
-
-.thumbnail-image {
-    max-width: 300px;
-}
-
-.art-gallary-list {
-    display: flex;
-}
-
-.characters > li 
-{
-    list-style-type: none;
-    padding: 0 10px;
-}
-
-
 
 @media all and (max-width: 1690px) {}
 @media all and (max-width: 1280px) {}
@@ -91,7 +51,7 @@ img {
         width: 375px;
     }
 
-    img {
+    .img {
         width: 90%;
     }
 }
@@ -100,6 +60,10 @@ img {
 @media all and (max-width: 375px) {
     .video-content>video {
         width: 300px;
+    }
+
+    .img {
+        width: 90%;
     }
 }
 

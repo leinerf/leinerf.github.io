@@ -15,69 +15,98 @@
 </head>
 
 <body>
-    <section class="content" id="landing-page">
-        <div>
-            <div>
-                <img src="" alt="">
+    <section id="landing-page">
+        <div class="content center-vertically">
+            <div class="logo-content">
+                <img src="assets/images/logo_placeholder.png" alt="">
             </div>
-            <div>
-                <img src="" alt="">
-            </div>
-        </div>
-    </section>
-    <section class="content" id="trailer-page">
-        <div>
-            <div>Game Play Trailer</div>
-            <div>Featuring Roguelike Gameplay</div>
-        </div>
-        <div>
-            <video width="400" controls>
-                <source src="/assets/videos/mov_bbb.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
-        </div>
-    </section>
-    <section class="content" id="story-page">
-        <div>
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis odio facilis ipsam magni autem ducimus,
-                rem quam quisquam provident consectetur. Nesciunt, optio! Voluptate amet, magnam nulla voluptatum
-                reprehenderit odit nemo!
+            <div class="company-content">
+                <div>Presented by</div>
+                <div class="company-image">
+                    <img src="assets/images/company_ipsum.png" alt="">
+                </div>
             </div>
         </div>
     </section>
-    <section class="content" id="characters-page">
-        <nav>
-            <div>
-                Characters
+    <section id="trailer-page">
+        <div class="content center-vertically">
+            <div class="video-content">
+                <div class="trailer-title">Game Play Trailer</div>
+                <video controls>
+                    <source src="assets/videos/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
             </div>
-            <div>
-                <ul>
-                    <li>
-                        Leif Ellps
-                    </li>
-                    <li>
-                        Jade Ellps
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        </div>
     </section>
-    <section class="content" id="art-gallery-page">
-        <div>Art Gallery</div>
-        <div>
-            <div><img src="" alt=""></div>
-            <div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
+    <section id="story-page">
+        <div class="content center-horizontally container">
+            <div class="story-image">
+                <img src="assets/images/sibling_bonding.jpg" alt="">
+            </div>
+            <div class="story-content">
+                <div class="title">
+                    Story
+                </div>
+                <div class="details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis odio facilis ipsam magni autem
+                    ducimus,
+                    rem quam quisquam provident consectetur. Nesciunt, optio! Voluptate amet, magnam nulla voluptatum
+                    reprehenderit odit nemo!
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="characters-page">
+        <div class="content container">
+            <div class="navbar-content">
+                <nav class="center-horizontally">
+                    <div>
+                        Characters
+                    </div>
+                    <div>
+                        <ul class="characters center-horizontally">
+                            <li>
+                                Leif Ellps
+                            </li>
+                            <li>
+                                Jade Ellps
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="character-content">
+                <div class="characeter-image-content container">
+                    <img id="character-image" src="assets/images/mc_concept.jpg" alt="">
+                </div>
+                <div class="character-details-content">
+                    <div class="character-name">Character Name</div>
+                    <div class="character-details">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nostrum, autem recusandae
+                        quos
+                        veniam vitae debitis velit error assumenda necessitatibus libero! Commodi, ipsam illum. Velit
+                        pariatur nobis sunt harum temporibus!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="art-gallery-page">
+        <div class="content center-vertically container">
+            <div class="art-gallary-main">
+                <div class="art-gallary-title">Art Gallery</div>
+                <div><img src="assets/images/full_moon.jpg" alt=""></div>
+            </div>
+            <div class="art-gallary-list">
+                <div><img class="thumbnail-image" src="assets/images/sister_drag_to_hell.jpg" alt=""></div>
+                <div><img class="thumbnail-image" src="assets/images/wildfire.jpg" alt=""></div>
+                <div><img class="thumbnail-image" src="assets/images/sister_magic.jpg" alt=""></div>
             </div>
         </div>
     </section>
     <!-- Optional JavaScript -->
+    <script src="index.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
