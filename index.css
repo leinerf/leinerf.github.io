@@ -47,6 +47,7 @@ section {
 
 .trailer-content>video {
     width: 800px;
+    background: black;
 }
 
 /* trailer page styling(end) */
