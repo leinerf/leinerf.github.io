@@ -47,7 +47,6 @@ section {
 
 .trailer-content>video {
     width: 800px;
-    background: black;
 }
 
 /* trailer page styling(end) */
@@ -75,8 +74,12 @@ section {
     z-index: 1;
     color: white;
     max-height: 200px;
+    border-radius: 5px;
 }
 
+.story-title {
+    border-bottom: 2px solid gray !important;
+}
 /* story page styling(end) */
 
 /* characters page styling(start) */
