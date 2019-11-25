@@ -152,6 +152,7 @@ section {
 
 .artwork-image-sm {
     max-width: 30%;
+    height: auto;
 }
 
 /* artwork page styling(end) */
@@ -222,6 +223,10 @@ section {
     .character-image {
         width: 80px;
     }
+
+    /* .artwork-image-sm {
+        max-height: 36px;
+    } */
 }
 
 /* iPhone 6/7/8  */
