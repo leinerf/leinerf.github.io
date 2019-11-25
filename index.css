@@ -95,7 +95,7 @@ section {
 .characters-navbar nav {
     display: flex;
     flex-direction: row;
-    padding: 0 10%;
+    padding: 0 5%;
     border-bottom: 2px solid gray;
 }
 
