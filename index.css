@@ -224,9 +224,13 @@ section {
         width: 80px;
     }
 
-    /* .artwork-image-sm {
+    .artwork-image-sm {
         max-height: 36px;
-    } */
+    } 
+
+    div.artwork-image-lists {
+        margin: 0 0;
+    }
 }
 
 /* iPhone 6/7/8  */
