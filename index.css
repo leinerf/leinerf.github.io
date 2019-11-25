@@ -73,7 +73,7 @@ section {
     transform: translate(-60px, 100px);
     z-index: 1;
     color: white;
-    min-height: 200px;
+    max-height: 200px;
 }
 
 /* story page styling(end) */
@@ -156,22 +156,84 @@ section {
 
 /* artwork page styling(end) */
 
-@media all and (max-width: 1690px) {}
+/* ----------- Non-Retina Screens ----------- */
 
-@media all and (max-width: 1280px) {}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {}
 
-@media all and (max-width: 980px) {}
+/* ----------- Retina Screens ----------- */
 
-@media all and (max-width: 736px) {}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {}
+
+/* iPad */
+
+@media all and (max-width: 770px) {
+    .trailer-content>video {
+        max-width: 500px;
+    }
+    .story-details {
+        max-height: 150px;
+        font-size: 0.5em;
+    }
+    .character-image {
+        width: 150px;
+    }
+    .character-details-container {
+        font-size: 0.5em;
+    }
+
+    .navbar-list li {
+        padding: 0 25px;
+        list-style-type: none;
+    }
+}
 
 /* iPhone 6/7/8 plus */
 
-@media all and (max-width: 420px) {}
+@media all and (max-width: 420px) {
+    .trailer-content>video {
+        max-width: 300px;
+    }
+    .story-details {
+        background: black;
+        transform: translate(0, 0);
+        z-index: 1;
+        color: white;
+    }
+
+    .story-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 10%;
+    }
+    .story-image-container{
+        padding: 0;
+    }
+    .characters-navbar {
+        font-size: 0.8em;
+    }
+
+    .navbar-list li {
+        padding: 0 5px;
+        list-style-type: none;
+    }
+
+    .character-image {
+        width: 80px;
+    }
+}
 
 /* iPhone 6/7/8  */
 
 @media all and (max-width: 375px) {
     .trailer-content>video {
         max-width: 300px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .character-details-container {
+        font-size: 5px;
     }
 }
