@@ -45,20 +45,18 @@ html, body {
 #story-page {
     display: flex;
     flex-direction: column;
-    
     padding: 3% 5%;
 }
 
 .title {
-    font-size: 2rem; 
+    font-size: 2rem;
 }
-
 
 .reverse-row {
     flex-direction: row-reverse;
 }
 
-.story-image{
+.story-image {
     max-width: 750px;
     width: 100%;
     float: left;
@@ -80,17 +78,17 @@ html, body {
 .trailer-container {
     position: relative;
     display: flex;
-    width:100%;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .trailer-description {
-  position: absolute;
-  top: 0; left: 10px;
-  font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 1.5rem;
 }
 
 .trailer-container video {
@@ -105,37 +103,36 @@ html, body {
     padding: 3% 5%;
 }
 
-#character-page > div {
+#character-page>div {
     display: flex;
     flex-direction: row;
-
 }
 
 .character-description {
-    width:100%;
+    width: 100%;
     margin-right: 10px;
 }
-.character-portrait {
-    
-}
+
+.character-portrait {}
 
 #character-active {
     opacity: 1;
 }
 
-.character-portrait > img {
+.character-portrait>img {
     max-width: 250px;
     width: 100%;
     opacity: 0.3;
 }
+
 /* characters page styling(end) */
 
 /* artwork page styling(start) */
 
-
 #artwork-page {
     padding: 3% 5%;
 }
+
 .artwork-content {
     display: flex;
     flex-direction: column;
@@ -168,6 +165,41 @@ html, body {
 
 /* artwork page styling(end) */
 
+/* contributors(start) */
+
+#contributors {
+    background: #601309;
+    padding: 3% 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contributors > div.title {
+    padding-bottom: 5%;
+}
+.contributors-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.contributors-list div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contributor-picture {
+    border-radius: 100%;
+    max-width: 150px;
+    width: 100%;
+}
+
+/* contributors(end) */
 /* ----------- Non-Retina Screens ----------- */
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {}
