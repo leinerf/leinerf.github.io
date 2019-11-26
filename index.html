@@ -6,107 +6,76 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Icons -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Custom css -->
     <link rel="stylesheet" href="index.css">
     <title>RE:START</title>
+    <!-- 
+        #f4002d
+        #242222
+        
+     -->
 </head>
 
 <body>
     <section id="landing-page">
-        <div class="logo-container">
-            <img class="logo-large" src="assets/images/logo_placeholder.png" alt="">
-        </div>
-        <div class="publisher-container">
-            <div class="publisher-content">
-                <div>Presented by</div>
-                <img src="assets/images/company_ipsum.png" alt="">
-            </div>
+        <img class="game-logo-lg" src="assets/images/game_logo.png">
+        <div class="company-container">
+            <span>Presented By</span><br>
+            <img class="company-logo-md align-right" src="assets/images/company_logo.png">
         </div>
     </section>
 
-    <section id="trailer-page">
-        <div class="trailer-container">
-            <div class="trailer-content">
-                <div class="trailer-title">Game Play Trailer</div>
-                <video class="trailer-video" controls>
-                    <source src="assets/videos/mov_bbb.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
-                </video>
-            </div>
-        </div>
-    </section>
     <section id="story-page">
-        <div class="story-container">
-            <div class="story-content story-image-container">
-                <img class="story-image" src="assets/images/sibling_bonding.jpg" alt="">
+        <div class="story-description">
+            <img class="story-image" src="assets/images/travelling_hell.jpg">
+            <div class="title">Story</div>
+            In a time when magic is a sin and users that could wield magic were casted-out as monsters, if the only
+            person that gave you warmth and light was dragged into the depths of Hell, would you find a way to save
+            that person?
+            Driven by familial love, Leif lost his parents at a young age. Left with only his sister, Jade, Leif
+            took care of her as she practiced magic growing up, only to be shunned by their very own village.
+            Taking refuge in a cabin in the forest, Leif and Jade sought a peaceful life there. But what trials lie
+            ahead the siblings when Jade opens the Gate to Hell and was dragged in against her will?
+            Having lost everything he once had, Leif journeys into Hell to save his one and only sister.
+        </div>
+    </section>
+    <section id="character-page">
+        <div class="title">Characters</div>
+        <div>
+            <div class="character-description">
+                <h3>Leif Ellps</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consequuntur culpa ab illo doloremque
+                    aliquid veniam adipisci fugiat quasi nostrum reprehenderit vitae aut, ducimus omnis sequi optio amet
+                    unde odio.
+                </p>
             </div>
-            <div class="story-content story-details">
-                <div class="story-title">
-                    Story
-                </div>
-                <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis odio facilis ipsam magni autem
-                    ducimus,
-                    rem quam quisquam provident consectetur. Nesciunt, optio! Voluptate amet, magnam nulla voluptatum
-                    reprehenderit odit nemo!
-                </div>
+            <div id="main-character" class="character-portrait">
+                <img id="character-active" src="assets/images/mc_portrait.png" alt="">
+            </div>
+            <div id="sister" class="character-portrait">
+                <img src="assets/images/mc_sister_portrait.png" alt="">
             </div>
         </div>
     </section>
-    <section id="characters-page">
-        <div class="characters-container">
-            <div class="characters-navbar">
-                <nav>
-                    <div class="navbar-content">
-                        Characters
-                    </div>
-                    <div class="navbar-content">
-                        <ul class="navbar-list">
-                            <li>
-                                Leif Ellps
-                            </li>
-                            <li>
-                                Jade Ellps
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <div class="characters-content">
-                <div class="character-image-container">
-                    <img class="character-image" src="assets/images/mc_concept.jpg" alt="">
-                </div>
-                <div class="character-details-container">
-                    <div>Character Name</div>
-                    <div>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente nostrum, autem recusandae
-                        quos
-                        veniam vitae debitis velit error assumenda necessitatibus libero! Commodi, ipsam illum. Velit
-                        pariatur nobis sunt harum temporibus!
-                    </div>
-                </div>
+    <section id="trailer-page">
+
+        <div class="trailer-container">
+            <video class="trailer-video" controls>
+                <source src="assets/videos/mov_bbb.mp4" type="video/mp4">
+            </video>
+            <div class="trailer-description">
+                <i class="fa fa-film" aria-hidden="true"></i> Gameplay Trailer
             </div>
         </div>
+
     </section>
-    <section id="artwork-page">
-        <div class="artwork-container">
-            <div class="artwork-title">Art Gallery</div>
-            <div class="artwork-content">
-                <div class="artwork-main-image">
-                    
-                    <img class="artwork-image-lg" src="assets/images/full_moon.jpg" alt="">
-                </div>
-                <div class="artwork-image-lists">
-                    <img class="artwork-image-sm" src="assets/images/sister_drag_to_hell.jpg" alt="">
-                    <img class="artwork-image-sm" src="assets/images/wildfire.jpg" alt="">
-                    <img class="artwork-image-sm" src="assets/images/sister_magic.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!-- Optional JavaScript -->
     <script src="index.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
