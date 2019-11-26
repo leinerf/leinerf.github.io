@@ -113,7 +113,12 @@ html, body {
     margin-right: 10px;
 }
 
-.character-portrait {}
+.display-none {
+    display: none;
+}
+.character-portrait {
+
+}
 
 #character-active {
     opacity: 1;
