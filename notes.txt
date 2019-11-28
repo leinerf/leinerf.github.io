@@ -1,0 +1,55 @@
+        <div class="story-description">
+            <img class="story-image" src="assets/images/travelling_hell.jpg">
+            <div class="title">Story</div>
+            In a time when magic is a sin and users that could wield magic were casted-out as monsters, if the only
+            person that gave you warmth and light was dragged into the depths of Hell, would you find a way to save that
+            person?<br><br>
+
+            Driven by familial love, Leif lost his parents at a young age. Left with only his sister, Jade, Leif took
+            care of her as she practiced magic growing up, only to be shunned by their very own village.<br><br>
+
+            Taking refuge in a cabin in the forest, Leif and Jade sought a peaceful life there. But what trials lie
+            ahead the siblings when Jade opens the Gate to Hell and was dragged in against her will? In Hell, there is
+            no peace, and every inhabitant almost lived in a manner of “every man for himself.” On Earth, there may be
+            strife and struggles, but it is not uncommon to see people working together to overcome these hardships but
+            such a concept did not exist in Hell. There is no peace, and there is no rest.<br><br>
+
+            Having lost everything he once had, Leif journeys into Hell to save his one and only sister, but should he
+            find his sister, will she be the same person he once knew?
+        </div>
+
+
+        <!-- <div class="character-card">
+            <div class="title">Characters</div>
+            <div>
+                <div id="Leif-Ellps-description" class="character-description">
+                    <h3>Leif Ellps</h3>
+                    <p>
+                        Leif is a young boy who grew up with his parents in a time of war, strife, and famine. However,
+                        he
+                        lost his father at a young age, and not too long after his sister, Jade, was born, he lost his
+                        mother as well. Left with only his sister, Leif sought to raise her and asked for nothing more
+                        than
+                        a peaceful life with her. In order to fulfill this wish, he journeys into Hell to save Jade.
+                    </p>
+                </div>
+                <div id="Jade-Ellps-description" class="character-description display-none">
+                    <h3>Jade Ellps</h3>
+                    <p>
+                        Jade is Leif’s younger sister. Growing up practicing magic, Jade was talented in her arts but
+                        was
+                        casted out as a witch from her villagers. This predicament ultimately costed her one and only
+                        home.
+                        After being dragged into Hell, Jade was forced to fight for herself in order to survive, but
+                        little
+                        did she know that her struggles would change her inside-out.
+                    </p>
+                </div>
+                <div id="main-character" class="character-portrait">
+                    <img id="character-active" src="assets/images/mc_portrait.png" alt="">
+                </div>
+                <div id="sister" class="character-portrait">
+                    <img src="assets/images/mc_sister_portrait.png" alt="">
+                </div>
+            </div> 
+        </div> -->
