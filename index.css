@@ -184,6 +184,38 @@ section {
 }
 /* characters page styling(end) */
 
+/* gameplay page styling(start) */
+
+#gameplay-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.gameplay-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20%;
+    padding: 3%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.gameplay-image img {
+    width: 100%;
+}
+
+.gameplay-description {
+    margin-top: 3%;
+}
+
+.gameplay-description h4 {
+    margin-bottom: 3%;
+    border-bottom: white solid 2px;
+}
+/* gameplay page styling(end) */
+
 /* artwork page styling(start) */
 
 #artwork-page {
