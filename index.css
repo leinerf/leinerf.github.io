@@ -202,14 +202,12 @@ section {
     padding: 0;
 }
 
-#contributors>div.title {
-}
-
 .contributors-list {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
+    margin-bottom: 5%;
 }
 
 .contributors-list div {
