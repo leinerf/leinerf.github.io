@@ -73,16 +73,6 @@ section {
     
 }
 
-.reverse-row {
-    flex-direction: row-reverse;
-}
-
-.story-image {
-    width: 100%;
-    float: left;
-    margin-right: 10px;
-}
-
 .top-right {
     position: absolute;
     bottom: 0px;
@@ -204,16 +194,15 @@ section {
 /* contributors(start) */
 
 #contributors {
-    background: #601309;
-    padding: 3% 5%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background: #304F49;
+    padding: 0;
 }
 
 #contributors>div.title {
-    padding-bottom: 5%;
 }
 
 .contributors-list {
