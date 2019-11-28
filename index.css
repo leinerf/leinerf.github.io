@@ -170,6 +170,11 @@ section {
     background: rgba(0, 0, 0, 0.5);
 }
 
+.character-description h3 {
+    border-bottom: white solid 2px;
+    margin-bottom: 3%;
+}
+
 .character-sprites {
     display: flex;
     justify-content: center;
