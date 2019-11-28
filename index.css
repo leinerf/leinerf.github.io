@@ -87,18 +87,19 @@ section {
     max-width: 1000px;
     width: 100%;
     border-radius: 10px;
-    /* box-shadow: -9px 6px 7px 3px rgba(204,178,178,1); */
-    
 }
 
 .top-right {
     position: absolute;
-    bottom: 0px;
+    bottom: 30px;
     right: 20px;
     margin-left: 70%;
     margin-top: 5px;
     background: rgba(0, 0, 0, 0.5);
-    
+}
+
+.top-right h3 {
+    border-bottom: white solid 2px;
 }
 /* story page styling(end) */
 
