@@ -106,27 +106,18 @@ section {
 /* trailer page styling(start) */
 
 #trailer-page {
-    /* background: lightblue url("img_tree.gif") no-repeat fixed center; */
-}
-
-.trailer-container {
-    position: relative;
     display: flex;
-    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3% 5%;
 }
 
-.trailer-description {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    font-size: 1.5rem;
-}
-
-.trailer-container video {
-    width: 100%;
+.trailer-container  iframe{
+    width: 1100px;
+    height: 550px;
+    border: 0px;
+    border-radius: 10px;
 }
 
 /* trailer page styling(end) */
@@ -188,7 +179,6 @@ section {
 .character-sprites img {
     max-width: 150px;
     height: 150px;
-
 }
 
 /* characters page styling(end) */
@@ -246,15 +236,11 @@ section {
 .artworks img {
     display: inline-block;
     width: 40%;
-    height: 388px;
     border-radius: 10px;
     margin: 3% 0;
     max-width: 690px;
-    
-
+    max-height: 388px;
 }
-
-
 
 /* artwork page styling(end) */
 
